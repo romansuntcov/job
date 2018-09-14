@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+		@font-face{
+			font-family: roboto-bold;
+			src:url(Roboto-Bold.ttf);	
+		}
+		@font-face{
+			font-family: roboto-light;
+			src:url(Roboto-Light.ttf);	
+		}
+		html,body{
+		    margin-left: auto;
+	  			margin-right: auto;
+			height:100%;
+			width: 100%;
+			padding: 0px;
+	  		margin: 0px;
+	  		background-color: rgb(1,190,223);
+	  	    -webkit-background-size: cover;
+       		-moz-background-size: cover;
+            -o-background-size: cover;
+        	background-size: cover;
+		}
+	  
+	  	.content{
+	  		
+	  		position: relative;	
+	  		margin-left: auto;
+	  		margin-right: auto;
+	  		text-align:center;
+	  		font-size: 25px;
+	  		color: white;
+	  	}
+	  	#button{
+	  		
+	  	}	
+	  	#button .image{
+	  		margin-left: auto;
+	  		margin-right: auto;	
+	  		width:200px;
+	  		height:276px;
+	  		background: url(Knopka_3.png) center center;
+	  		-webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+	  	}
+	  	.top{
+	  	    padding-top: 4%;
+	  		margin-bottom:18%;
+	  		font-family: roboto-bold;
+	  		text-align: center;
+	  	}
+	  	.button{
+	  		position: relative;
+	  	}
+	  	.text_but{
+	  		position: absolute;
+	  		text-align: center;
+	  		margin-left: 22.5%;
+	  		width:55%;
+	  		height:30%;
+	  		padding-top: 15%;
+	  		font-family: roboto-bold;
+	  		text-decoration: none;
+	  		font-size: 21px;
+	  		color:white;
+	  		cursor:pointer;
+	  	}
+	  	.bottom{
+	  		font-family: roboto-light;
+	  		text-align: right;
+	  		padding-right: 26%;
+	  		font-size: 28px;
+		}
+		@media(max-width:321px) and (max-height:380px){
+			
+			div#button .image{
+				margin-left: auto;
+	  		margin-right: auto;	
+				width:200px;
+				height:199px;
+				background: url(hor_mini.png) center center;
+				-webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+			}
+			div.bottom {
+				display:none;
+			}
+		}
+		@media(min-height:500px){
+		    div.text_but{
+		        padding-top:16%;
+		    }
+		}
+		@media(min-height:600px){
+		    div.text_but{
+		        padding-top:14%;
+		    }
+		}
+		@media(min-width: 450px) and (min-height: 200px){
+			div.content{
+	  			display:inline-block;
+	  			width:100%;
+	  			height:100%;
+	  			margin-left: auto;
+	  			margin-right: auto;
+	  			margin-top: 0%;	
+	  		}
+	  		div.text_but{
+	  			margin: 0px;
+	  			padding: 0px;
+	  			width:230px;
+	  			height: 160px;
+	  			padding-top: 65px;
+	  			font-size:20px;	
+	  		}
+	  		div.top{
+	  			display: inline-block;
+	  			font-size: 18px;
+	  			width:30%;
+	  		}
+	  		div.top #t{
+	  			position:absolute;
+	  			top:30%;
+
+	  		}
+	  		div#button{
+	  		    margin-top:5%;
+	  			display:inline-block;
+	  			width:230px;
+	  			height:227px;
+	  		}
+	  		div#button .image{
+	  			margin-left: 0px;
+	  			margin-right: 0px;
+	  			width:230px;
+	  			height:229px;
+	  			background: url(hor_mini.png) center center;
+	  			-webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+	  		}
+	  		div.bottom{
+	  			display:none;
+	  		}
+	  	}
+		@media (min-width: 650px) and (min-height: 500px){
+	  		div.top #t{
+	  			top:15%;
+	  		}
+	  	}
+	  	
+
+	  	@media (min-width: 600px) and (min-height: 800px){
+	  		div.content{
+	  			display:block;
+	  			margin-left: auto;
+	  			margin-right: auto;
+	  			text-align:center;
+	  			position: relative;
+	  			font-size: 36px;
+	  		}
+	  		div.top{
+	  		    margin-bottom:5%;
+	  		}
+	  		div.top #t{position: relative;
+	  			top:0px;}
+	  		div.top{
+	  			width:500px;
+	  			position: relative;
+	  			font-size: 32px;
+	  		}
+	  		div.text_but{
+	  		    margin-left: 0%;
+	  		    width:400px;
+	  		    height:300px;
+	  		    padding-top: 20%;
+	  			font-size: 34px;
+	  		}
+	  		div#button{
+	  		    margin-top:5%;
+	  			width:400px;
+	  			height:553px;
+	  		}
+	  		div#button .image{
+	  			width:400px;
+	  			height:553px;
+	  			background: url(Knopka_3.png) center center;
+	  		    -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+	  		}
+	  		div.content{font-size: 30px;}
+	  		div.bottom{
+	  			text-align: right;
+	  			display: block;
+	  			position: relative;
+	  			font-size: 40px;
+	  		}
+	  		div.bottom #b{
+	  			position: relative;
+	  			left: 0px;
+	  			bottom: 0px;
+	  		}		
+	  	}
+	  	@media (min-width: 600px) and (min-height: 900px){
+	  	    div.top{
+	  		    margin-bottom:10%;
+	  		}
+	  	}
+	  	@media (min-width: 700px) and (min-height: 900px){
+	  	    div.text_but{
+	  		    padding-top:15%;
+	  		}
+	  		div.bottom{
+	  		    padding-right:30%;
+	  		}
+	  	}
+	  	@media (min-width: 800px) and (min-height: 600px){
+	  	    div.content{
+	  			display:inline-block;
+	  			width:95%;
+	  			height:100%;
+	  			margin-left: auto;
+	  			margin-right: auto;
+	  		}
+	  		div.text_but{
+	  			margin: 0px;
+	  			padding: 0px;
+	  			margin-left: 10px;
+	  			padding-top:9%;
+	  			font-size: 30px;
+	  			width: 260px;
+	  			height:220px;
+	  		}
+	  		div.top{
+	  		    width:28%;
+	  			display: inline-block;
+	  		}
+	  		
+	  		div.top #t{
+	  			position:absolute;
+	  			margin-top:15%;
+	  			font-size: 28px;
+
+	  		}
+	  		div#button{
+	  			display:inline-block;
+	  			width:420px;
+	  			height:324px;
+	  			margin-top:15%;
+	  		}
+	  		div#button .image{
+	  			margin-left: 0px;
+	  			margin-right: 0px;
+	  			width:420px;
+	  			height:328px;
+	  			background: url(horiz.png) center center;
+	  			-webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+	  		}
+	  		div.bottom{
+	  			display:block;
+	  			font-size:33px;
+	  			padding-right:5%;
+	  		}
+	  		
+	  	}
+
+	  	@media (min-width: 800px) and (min-height: 1000px){
+	  		div.content{
+	  			display:block;
+	  			margin-left: auto;
+	  			margin-right: auto;
+	  			text-align:center;
+	  			position: relative;
+	  			font-size: 46px;
+	  			
+	  		}
+
+	  		div.top{
+	  			top:0px;
+	  			width:500px;
+	  			position: relative;
+	  		}
+	  		div.top #t{position: relative;
+	  			font-size: 40px;
+	  			top:0px;}
+	  		div.text_but{
+                padding-top:120px;
+	  			width:440px;
+	  			height:300px;
+	  			
+	  			font-size: 46px;
+	  		}
+	  		div#button{
+	  			width:450px;
+	  			height:622px;
+	  		}
+	  		div#button .image{
+	  			width:450px;
+	  			height:622px;
+	  			background: url(Knopka_3.png) center center;
+	  		-webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover
+	  		}
+	  		div.content{font-size: 30px;}
+	  		div.bottom{
+	  			padding-right:30%;
+	  			text-align: right;
+	  			display: block;
+	  			position: relative;
+	  			
+	  			font-size: 46px;}	
+	  		div.bottom #b{
+	  		
+	  			position: relative;
+	  			left: 0px;
+	  			bottom: 0px;
+	  			font-size: 46px;
+	  		}		
+	  	}
+
+	  	@media (min-width: 1100px) and (min-height: 600px){
+	  		div.content{
+	  			width:100%;
+	  			height:100%;
+	  			margin-left: auto;
+	  			margin-right: auto;
+	  		}
+	  		div.top{
+	  		    padding-top:25%;
+	  			display: inline-block;
+	  			width:25%;
+	  		}
+	  		div.top #t{
+	  			position: absolute;
+	  			font-size: 36px;
+	  		}
+	  		div.text_but{
+	  			
+	  			padding-top:150px;
+	  			font-size: 40px;
+	  			width:400px;
+	  			height:350px;
+	  		}
+	  		div#button{
+	  		    margin-top:5%;
+	  			margin-left: 50px;
+	  			display: inline-block;
+	  			width: 630px;
+	  			height:487px;
+	  		}
+	  		div#button .image{
+	  			width: 630px;
+	  			height:493px;
+	  			background: url(horiz.png) center center;
+	  			-webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;	
+	  		}
+	  		div.bottom{
+	  		    display:block;
+	  			padding-right:3%;
+	  			font-size: 42px;
+
+	  		}
+	  		div.bottom #b{
+	  			
+	  			
+	  			
+	  		}
+	  	}
+	  	@media(min-height: 600px) and (min-width: 1200px){
+	  		div.bottom{
+	  			padding-right:5%;
+
+	  		}
+	  	}
+	  	@media(min-height: 700px) and (min-width: 1450px){
+	  	    div.bottom{
+	  			padding-right:8%;
+
+	  		}
+	  	}
+	  	@media(min-height: 700px) and (min-width: 1650px){
+	  	    div.bottom{
+	  			padding-right:10%;
+
+	  		}
+	  	}
+	  	@media(min-height: 900px) and (min-width: 1200px){
+	  		div.top{
+	  		    padding-top:15%;
+	  			display: inline-block;
+	  			width:25%;
+	  		}
+	  	}  	
+
+	</style>
+
+</head>
+<body>
+	<div class="content">
+		<div class="top">
+			<div id="t">
+			ПРИМИ УЧАСТИЕ <br>В ОПРОСЕ
+			</div>
+		</div>
+
+		<div id="button">
+			<div class="text_but" onClick="parent.postMessage('banner.redirect', '*')">улучшить<br> Wi-Fi<br> в метро</div>
+			<div class="image">
+			
+			</div>
+		</div>
+
+		<div class="bottom">
+			<div id="b">Нажми!</div>
+		</div>
+	</div>
+</body>
+</html>
