@@ -2,9 +2,9 @@
 <!--Подключение к базе данных-->
 <?php
 	$dblocation = "localhost";
-	$dbname = "igorrnaumovv_handco";
-	$dbuser = "046283136_handco";
-	$dbpasswd = "Lenovo18";
+	$dbname = "";
+	$dbuser = "";
+	$dbpasswd = "";
 	$dbcnx = @mysql_connect($dblocation,$dbuser,$dbpasswd);
 	if (!$dbcnx) 
 	{
